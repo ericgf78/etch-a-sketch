@@ -12,7 +12,13 @@
         <h1>Etch-A-Sketch!</h1>
     </header>
     <div class = "mainContent">
-        <div id = "workspace"></div>
+        <div id = "workspace">
+            <div id = "sliderContainer">
+                <p>Grid Size:</p>
+                <input type="range" id="slider" min="2" max="100" value="8" oninput="generateGrid(this.value)">
+                <div id = "sliderDisplay"></div>
+            </div>
+        </div>
         <div id = "canvasContainer">
             <div id="innerContainer"></div>
         </div>

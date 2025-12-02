@@ -1,4 +1,7 @@
 let canvasContainer = document.querySelector("#innerContainer");
+let slider = document.querySelector('#slider');
+let sliderValue = slider.value;
+let gridSize = 10;
 
 function createGridDiv(divSize) {
     const gridDiv = document.createElement("div");
@@ -10,10 +13,13 @@ function createGridDiv(divSize) {
 }
 
 function generateGrid(size) { 
+    sliderDisplay.innerHTML = `Size: ${slider.value}`;
+    canvasContainer.innerHTML = '';
     for (let i = 0; i < size * size; i++) {
         createGridDiv(size);
        
     }     
 }
 
-generateGrid(16);
+generateGrid(sliderValue);
+
