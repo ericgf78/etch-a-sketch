@@ -79,8 +79,15 @@ h1 {
   background: #fe9179;
   outline: solid 8px #405665;
   border-radius: 50%;
-  
 }
+
+.brushContainer {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #pencil:hover {
     filter: brightness(1.1);
 }
@@ -99,6 +106,10 @@ h1 {
     padding: 2rem;
     justify-content: center;
     border-radius: 10px;   
+}
+
+#colorInput {
+    display: none;
 }
 
 footer {

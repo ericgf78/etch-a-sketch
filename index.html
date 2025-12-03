@@ -19,8 +19,11 @@
                 <div id = "sliderDisplay"></div>
             </div>
             <div id="pencil"><img src="./Assets/pencil.png" alt="pencil" height="206px" width="494px"></div>
-            <div id="brush"><img src="./Assets/brush.png" alt="brush" height="206px" width="494px"></div>
-            <div id="unicorn"><img src="./Assets/unicorn.png" alt="unicorn" height="206px" width="494px"></div>
+            <div class="brushContainer">
+                <div id="brush"><img src="./Assets/brush.png" alt="brush" height="206px" width="494px"></div>
+                <input type="color" id="colorInput" value="#6a97d2" oninput="selectColor(this.value)">
+            </div>
+            <div id="unicorn"><img src="./Assets/unicorn.png" alt="unicorn" height="206px" width="494px"></div> 
         </div>
         <div id = "canvasContainer">
             <div id="innerContainer"></div>
